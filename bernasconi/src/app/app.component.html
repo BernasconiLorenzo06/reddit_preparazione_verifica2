@@ -1,0 +1,28 @@
+<form>
+  <h3>Add a Link</h3>
+  <div>
+    <label for="num1">inserisci numero 1</label>
+    <input name="num1" #numero1>
+  </div>
+  <div>
+    <label for="num2">inserisci numero 2:</label>
+    <input name="num2" #numero2>
+  </div>
+  <button (click)="addizione(numero1,numero2)">
+    Submit link
+    </button>
+  <button (click)="sottrazione(numero1,numero2)">
+    Submit link
+  </button>
+  <button (click)="moltiplicazione(numero1,numero2)">
+    Submit link
+  </button>
+  <button (click)="divisione(numero1,numero2)">
+    Submit link
+  </button>
+
+</form>
+
+<p>
+ <app-nuovo [risultato] = "risultato"></app-nuovo>
+</p>
